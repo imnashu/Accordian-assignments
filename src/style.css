@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  margin: 2rem 0 4rem 0;
+}
+
+.Maindiv{
+  width: 600px;
+  display: block;
+  text-align: center;
+  margin-right : 500px;
+}
+.onecard{
+  
+  display: block;
+  margin: 30px;
+}
+.title {
+  width:200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #c7c280;
+}
+
+.title:hover {
+  background-color: #7acec3;
+}
+
+.title,.content {
+  padding: 2rem;
+}
+
+.content {
+  background-color: #8a9394;
+  width: 400px;
+}

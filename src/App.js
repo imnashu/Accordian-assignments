@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import MultiAcc from './MultiAcc';
+import './style.css'
+import { accData } from './data/data';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='viewport'>
+      <h1>Accordian 4th assignment</h1>
+      <div className="Maindiv">
+        {accData.map(({ title, content }) => (
+          <MultiAcc title={title} content={content}/>
+        ))}
+      </div>
     </div>
   );
 }
